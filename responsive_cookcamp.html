@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive CookCamp</title>
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="responsive_cookcamp.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+    .carousel-control.left.carousel-bg-none {
+        background: none;
+    }
+    .carousel-control.right.carousel-bg-none {
+        background: none;
+    }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-default text-center">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sp_menu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="logo" href="#"><img src="./img-materials/logo.png"></a>
+        <div class="collapse navbar-collapse" id="sp_menu">
+            <ul class="nav navbar-nav header_list">
+                <li class="dropdown">
+                    <a class="btn" data-toggle="dropdown">
+                        新着レシピ
+                        <span class="caret"></span>
+                    </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">季節菜の彩り前菜</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">簡単かぼちゃスープ</a></li>
+                            <li><a href="#">ヘルシー米粉パン</a></li>
+                            <li><a href="#">ぷりぷり海老料理</a></li>
+                        </ul>
+                </li>
+                <li><a href="#">料理から検索</a></li>
+                <li><a href="#">食材から検索</a></li>
+                <li><a href="#">他の料理特集</a></li>
+                <li><a href="#">ランキング</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid set_carousel">
+        <div id="slide" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#slide" data-slide-to="0" class="active"></li>
+                <li data-target="#slide" data-slide-to="1"></li>
+                <li data-target="#slide" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div style="background-image:url(./img-materials/key_visual.jpg)" class="image_header"></div>
+                </div>
+                <div class="item">
+                    <div style="background-image:url(./img-materials/key_visual2.jpg)" class="image_header"></div>
+                </div>
+                <div class="item">
+                    <div style="background-image:url(./img-materials/key_visual3.jpg)" class="image_header"></div>
+                </div>
+                <a class="carousel-control left carousel-bg-none" href="#slide" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="carousel-control right carousel-bg-none" href="#slide" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="container">
+        <div class="row set_row">
+            <form class="form-inline">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input class="form-control" placeholder="料理名・食材名で検索">
+                        <a href="#" class="input-group-addon">レシピ検索</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-lg-4 hidden-xs hidden-sm">
+                <h2 class="title">料理別レシピ</h2>
+                <ul class="list-unstyled nav_list">
+                    <li><a href="#">和食</a></li>
+                    <li><a href="#">イタリアン</a></li>
+                    <li><a href="#">フレンチ</a></li>
+                    <li><a href="#">中華</a></li>
+                    <li><a href="#">アジアン</a></li>
+                    <li><a href="#">エスニック</a></li>
+                    <li><a href="#">鍋</a></li>
+                    <li><a href="#">デザート</a></li>
+                    <li><a href="#">お弁当</a></li>
+                    <li><a href="#">簡単おかず</a></li>
+                    <li><a href="#">ダイエット</a></li>
+                    <li><a href="#">ベビーフード</a></li>
+                    <li><a href="#">節約食材</a></li>
+                    <li><a href="#">アレルギー</a></li>
+                    <li><a href="#">シニア料理</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-12 visible-xs visible-sm">
+                <h2 class="title">ジャンル別レシピ</h2>
+                <div class="row set_row">
+                    <div class="col-xs-4 col-sm-4">
+                        <a class="btn btn-default btn-block" href="#">和食</a>
+                    </div>
+                    <div class="col-xs-4 col-sm-4">
+                        <a class="btn btn-default btn-block" href="#">イタリアン</a>
+                    </div>
+                    <div class="col-xs-4 col-sm-4">
+                        <a class="btn btn-default btn-block" href="#">フレンチ</a>
+                    </div>
+                </div>
+                <div class="row set_row">
+                    <div class="col-xs-4 col-sm-4">
+                        <a class="btn btn-default btn-block" href="#">洋食</a>
+                    </div>
+                    <div class="col-xs-4 col-sm-4">
+                        <a class="btn btn-default btn-block" href="#">中華</a>
+                    </div>
+                    <div class="col-xs-4 col-sm-4">
+                        <a class="btn btn-default btn-block" href="#">その他</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="row set_row">
+                    <h2 class="title">新着レシピ</h2>
+                    <figure class="col-xs-6 col-sm-6 col-md-3 col-lg-3" data-toggle="tooltip" data-placement="top" title="イタリアン">
+                        <img src="./img-materials/image01.jpg" class="img-responsive" data-toggle="modal" data-target="#modal1">
+                        <div class="modal fade" id="modal1">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-body modal-close">
+                                       <img src="./img-materials/image08.jpg" class="img-responsive set_modal" id="image8">
+                                       <p>様々な食材を使用し作り上げた色とりどりの前菜はテーブルをカラフルに彩ります♪</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-dismiss="modal">閉じる</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption class="text-center">季節菜の彩り前菜</figcaption>
+                    </figure>
+                    <figure class="col-xs-6 col-sm-6 col-md-3 col-lg-3" data-toggle="tooltip" data-placement="top" title="フレンチ">
+                        <img src="./img-materials/image02.jpg" class="img-responsive" data-toggle="modal" data-target="#modal2">
+                        <div class="modal fade" id="modal2">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-body modal-close">
+                                       <img src="./img-materials/image09.jpg" class="img-responsive set_modal" id="image9">
+                                       <p>柔らかく蒸したあとはホイッパーで混ぜるだけの簡単レシピです！かぼちゃは、ビタミンやミネラルが豊富なので美容や冷え性に良いですよ♪</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-dismiss="modal">閉じる</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption class="text-center">簡単かぼちゃスープ</figcaption>
+                    </figure>
+                    <figure class="col-xs-6 col-sm-6 col-md-3 col-lg-3" data-toggle="tooltip" data-placement="top" title="ダイエット">
+                        <img src="./img-materials/image03.jpg" class="img-responsive" data-toggle="modal" data-target="#modal3">
+                        <div class="modal fade" id="modal3">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-body modal-close">
+                                        <img src="./img-materials/image10.jpg" class="img-responsive set_modal" id="image10">
+                                        <p>米粉を使ったさっくりとした軽い食感のパンです♪米粉は日本の主食のお米で作られており、ヘルシーで口当たりもいいですよ♪</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-dismiss="modal">閉じる</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption class="text-center">ヘルシー米粉パン</figcaption>
+                    </figure>
+                    <figure class="col-xs-6 col-sm-6 col-md-3 col-lg-3" data-toggle="tooltip" data-placement="top" title="エスニック">
+                        <img src="./img-materials/image04.jpg" class="img-responsive" data-toggle="modal" data-target="#modal4">
+                        <div class="modal fade" id="modal4">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-body modal-close">
+                                        <img src="./img-materials/image11.jpg" class="img-responsive set_modal" id="image11">
+                                        <p>エビがサラダやスープ、ごはんなどに入っていると、テンションが上がりますよね♪ただ、エビは意外に調理が難しいという声も...。実はあるテクニックを使うだけでエビがプリップリに仕上がっちゃうんです♪</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-dismiss="modal">閉じる</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption class="text-center">ぷりぷり海老料理</figcaption>
+                    </figure>
+                </div>
+
+                <div class="row set_row">
+                    <h2 class="title">今だからこそ見直したい「和食」</h2>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <img src="./img-materials/image05.jpg" class="img-responsive center-block">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <p>普段、私達が何気なく口にしている和食ですが、その基本は一汁三菜。ご飯、味噌汁、お漬物の他、主菜（魚またはお肉）、さ副菜として季節毎の野菜と豆腐で構成されます。</p>
+                        <p>昔から、「旬の野菜を食べましょう」と言いますが、それは素材がじっくりと時間をかけて蓄積してきた旨みや栄養価が最高になったところでいただいて、効率よく栄養をと取り風邪などの予防をしましょうね、ということです。</p>
+                        <p>それでは各季節毎の旬の野菜について調べてみましょう。</p>
+                        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 set_next">
+                            <a class="btn btn-primary btn-block" href="#">続きを読む<i class="far fa-arrow-alt-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row set_row">
+                    <h2 class="title">簡単！おすすめレシピ</h2>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 set_row">
+                        <img src="./img-materials/image06.jpg" class="center-block img-responsive">
+                        <div class="">
+                            <h3>季節の食材〜春〜</h3>
+                            <p>新たまねぎに春キャベツ、新じゃが、山菜などなど・・・春の野菜は風味が良くみずみずしいのが特徴です。</p>
+                            <p>それでは野菜を使ったレシピを紹介しましょう。</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 set_next">
+                            <a class="btn btn-primary btn-block" href="#">続きを読む<i class="far fa-arrow-alt-circle-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <img src="./img-materials/image07.jpg" class="center-block img-responsive">
+                        <div class="">
+                            <h3>春野菜を食べて花粉症予防？！</h3>
+                            <p>春になると花粉症に悩まされる人は多いと思います。この花粉症、ある食材を取ることで少し緩和されるんです！</p>
+                            <p>さて、その食材とは・・・？</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 set_next">
+                            <a class="btn btn-primary btn-block" href="#">続きを読む<i class="far fa-arrow-alt-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="navbar navbar-default text-center set_footer">
+        <div>
+            <ul class="nav navbar-nav header_list">
+                <li><a href="#">サイトマップ</a></li>
+                <li><a href="#">プライバシーポリシー</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+                <li><a href="#">ご利用ガイド</a></li>
+            </ul>
+            <p class="footer_text"><small>Copyright &copy; CodeCamp All Rights Reserved.</small></p>
+        </div>
+    </footer>
+
+<script>
+    $('[data-toggle=tooltip]').tooltip();
+</script>
+
+</body>
+</html>
